@@ -7,18 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A1D28CA2F4DA3EA005DC2DC /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1D28C92F4DA3EA005DC2DC /* FeedView.swift */; };
+		5A1D28CC2F4DA8A2005DC2DC /* StorySectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1D28CB2F4DA8A2005DC2DC /* StorySectionView.swift */; };
+		5A1D28CE2F4DA983005DC2DC /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1D28CD2F4DA983005DC2DC /* InboxView.swift */; };
+		5A1D28D02F4DA9B8005DC2DC /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1D28CF2F4DA9B8005DC2DC /* ChatView.swift */; };
+		5A1D28D42F4DAEC5005DC2DC /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1D28D32F4DAEC5005DC2DC /* ProfileHeaderView.swift */; };
+		5A1D28D62F4DAEF3005DC2DC /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1D28D52F4DAEF3005DC2DC /* ProfileView.swift */; };
+		5A1D28D82F4DAFB4005DC2DC /* UploadPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1D28D72F4DAFB4005DC2DC /* UploadPostViewModel.swift */; };
+		5A1D28DA2F4DAFEA005DC2DC /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1D28D92F4DAFEA005DC2DC /* UploadPostView.swift */; };
 		5AB47A7F2F4C1BFF001280DD /* instagram_cloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB47A7E2F4C1BFF001280DD /* instagram_cloneApp.swift */; };
-		5AB47A812F4C1BFF001280DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB47A802F4C1BFF001280DD /* ContentView.swift */; };
+		5AB47A812F4C1BFF001280DD /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB47A802F4C1BFF001280DD /* MainTabView.swift */; };
 		5AB47A832F4C1C01001280DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AB47A822F4C1C01001280DD /* Assets.xcassets */; };
 		5AB47A862F4C1C01001280DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AB47A852F4C1C01001280DD /* Preview Assets.xcassets */; };
+		5AB47A8E2F4C26D8001280DD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB47A8D2F4C26D8001280DD /* User.swift */; };
+		5AB47A902F4C270F001280DD /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB47A8F2F4C270F001280DD /* Post.swift */; };
+		5AB47A932F4C2816001280DD /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB47A922F4C2816001280DD /* PostCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A1D28C92F4DA3EA005DC2DC /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		5A1D28CB2F4DA8A2005DC2DC /* StorySectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorySectionView.swift; sourceTree = "<group>"; };
+		5A1D28CD2F4DA983005DC2DC /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
+		5A1D28CF2F4DA9B8005DC2DC /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		5A1D28D32F4DAEC5005DC2DC /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		5A1D28D52F4DAEF3005DC2DC /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		5A1D28D72F4DAFB4005DC2DC /* UploadPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostViewModel.swift; sourceTree = "<group>"; };
+		5A1D28D92F4DAFEA005DC2DC /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
 		5AB47A7B2F4C1BFF001280DD /* instagram_clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instagram_clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AB47A7E2F4C1BFF001280DD /* instagram_cloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = instagram_cloneApp.swift; sourceTree = "<group>"; };
-		5AB47A802F4C1BFF001280DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5AB47A802F4C1BFF001280DD /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		5AB47A822F4C1C01001280DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AB47A852F4C1C01001280DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5AB47A8D2F4C26D8001280DD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5AB47A8F2F4C270F001280DD /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		5AB47A922F4C2816001280DD /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +73,9 @@
 		5AB47A7D2F4C1BFF001280DD /* instagram_clone */ = {
 			isa = PBXGroup;
 			children = (
+				5AB47A912F4C27DF001280DD /* Views */,
+				5AB47A8C2F4C26C0001280DD /* Models */,
 				5AB47A7E2F4C1BFF001280DD /* instagram_cloneApp.swift */,
-				5AB47A802F4C1BFF001280DD /* ContentView.swift */,
 				5AB47A822F4C1C01001280DD /* Assets.xcassets */,
 				5AB47A842F4C1C01001280DD /* Preview Content */,
 			);
@@ -65,6 +88,32 @@
 				5AB47A852F4C1C01001280DD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5AB47A8C2F4C26C0001280DD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5AB47A8D2F4C26D8001280DD /* User.swift */,
+				5A1D28D72F4DAFB4005DC2DC /* UploadPostViewModel.swift */,
+				5AB47A8F2F4C270F001280DD /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5AB47A912F4C27DF001280DD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5AB47A802F4C1BFF001280DD /* MainTabView.swift */,
+				5AB47A922F4C2816001280DD /* PostCell.swift */,
+				5A1D28C92F4DA3EA005DC2DC /* FeedView.swift */,
+				5A1D28CB2F4DA8A2005DC2DC /* StorySectionView.swift */,
+				5A1D28CD2F4DA983005DC2DC /* InboxView.swift */,
+				5A1D28CF2F4DA9B8005DC2DC /* ChatView.swift */,
+				5A1D28D32F4DAEC5005DC2DC /* ProfileHeaderView.swift */,
+				5A1D28D52F4DAEF3005DC2DC /* ProfileView.swift */,
+				5A1D28D92F4DAFEA005DC2DC /* UploadPostView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +186,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AB47A812F4C1BFF001280DD /* ContentView.swift in Sources */,
+				5AB47A812F4C1BFF001280DD /* MainTabView.swift in Sources */,
+				5A1D28CC2F4DA8A2005DC2DC /* StorySectionView.swift in Sources */,
 				5AB47A7F2F4C1BFF001280DD /* instagram_cloneApp.swift in Sources */,
+				5AB47A8E2F4C26D8001280DD /* User.swift in Sources */,
+				5A1D28D02F4DA9B8005DC2DC /* ChatView.swift in Sources */,
+				5AB47A902F4C270F001280DD /* Post.swift in Sources */,
+				5A1D28CE2F4DA983005DC2DC /* InboxView.swift in Sources */,
+				5A1D28DA2F4DAFEA005DC2DC /* UploadPostView.swift in Sources */,
+				5A1D28D42F4DAEC5005DC2DC /* ProfileHeaderView.swift in Sources */,
+				5A1D28CA2F4DA3EA005DC2DC /* FeedView.swift in Sources */,
+				5A1D28D62F4DAEF3005DC2DC /* ProfileView.swift in Sources */,
+				5AB47A932F4C2816001280DD /* PostCell.swift in Sources */,
+				5A1D28D82F4DAFB4005DC2DC /* UploadPostViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
