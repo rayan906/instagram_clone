@@ -1,11 +1,4 @@
-//
-//  ContentView.swift
-//  instagram_clone
-//
-//  Created by apprikart on 23/02/26.
-//
 import SwiftUI
-
 struct MainTabView: View {
     var body: some View {
         TabView {

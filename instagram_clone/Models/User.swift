@@ -13,12 +13,12 @@ struct User: Identifiable, Hashable {
     var profileImageUrl: String?
     var fullName: String?
     static var MOCK_USERS: [User] = [
-        .init(id: UUID().uuidString, username: "ios_dev_intern", profileImageUrl: "user1", fullName: "Software Engineer"),
-        .init(id: UUID().uuidString, username: "steve_jobs", profileImageUrl: "user2", fullName: "Steve Jobs"),
-        .init(id: UUID().uuidString, username: "craig_f", profileImageUrl: "user3", fullName: "Craig Federighi"),
-        .init(id: UUID().uuidString, username: "craig_f", profileImageUrl: "post1", fullName: "Craig Federighi"),
-        .init(id: UUID().uuidString, username: "craig_f", profileImageUrl: "post2", fullName: "Craig Federighi"),
-        .init(id: UUID().uuidString, username: "craig_f", profileImageUrl: "post3", fullName: "Craig Federighi"),
-        .init(id: UUID().uuidString, username: "craig_f", profileImageUrl: "user1", fullName: "Craig Federighi")
+        .init(id: UUID().uuidString, username: "dr_strange", profileImageUrl: "dr_strange", fullName: "Dr Strange"),
+        .init(id: UUID().uuidString, username: "captian_america", profileImageUrl: "captian_america", fullName: "Captian America"),
+        .init(id: UUID().uuidString, username: "thor", profileImageUrl: "thor", fullName: "Thor"),
+        .init(id: UUID().uuidString, username: "bat_man", profileImageUrl: "bat_man", fullName: "Bat Man"),
+        .init(id: UUID().uuidString, username: "super_man", profileImageUrl: "super_man", fullName: "Super Man"),
+        .init(id: UUID().uuidString, username: "spider_man", profileImageUrl: "spider_man", fullName: "Spider Man"),
+        .init(id: UUID().uuidString, username: "iron_man", profileImageUrl: "iron_man", fullName: "Iron Man")
     ]
 }

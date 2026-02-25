@@ -48,7 +48,7 @@ struct Post: Identifiable, Hashable {
             ownerUid: User.MOCK_USERS[3].id,
             caption: "Hair force one reporting for duty. ✈️",
             likes: 890,
-            imageUrl: "user1",
+            imageUrl: "post4",
             timestamp: Date(),
             user: User.MOCK_USERS[3]
         ),
@@ -57,7 +57,7 @@ struct Post: Identifiable, Hashable {
             ownerUid: User.MOCK_USERS[4].id,
             caption: "Hair force one reporting for duty. ✈️",
             likes: 890,
-            imageUrl: "user3",
+            imageUrl: "post5",
             timestamp: Date(),
             user: User.MOCK_USERS[4]
         ),
@@ -66,7 +66,7 @@ struct Post: Identifiable, Hashable {
             ownerUid: User.MOCK_USERS[5].id,
             caption: "Hair force one reporting for duty. ✈️",
             likes: 890,
-            imageUrl: "post1",
+            imageUrl: "post6",
             timestamp: Date(),
             user: User.MOCK_USERS[5]
         ),
@@ -75,7 +75,7 @@ struct Post: Identifiable, Hashable {
             ownerUid: User.MOCK_USERS[6].id,
             caption: "Hair force one reporting for duty. ✈️",
             likes: 890,
-            imageUrl: "user2",
+            imageUrl: "post07",
             timestamp: Date(),
             user: User.MOCK_USERS[6]
         )
