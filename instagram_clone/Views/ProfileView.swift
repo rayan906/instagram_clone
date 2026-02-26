@@ -8,9 +8,7 @@ import SwiftUI
 
 struct ProfileView: View {
     let user: User
-    var userPosts: [Post] {
-        Post.MOCK_POSTS.filter { $0.ownerUid == user.id }
-    }
+    @State private var userPosts: [Post] = []
     let gridColumns: [GridItem] = [
         GridItem(.flexible(), spacing: 1),
         GridItem(.flexible(), spacing: 1),
@@ -26,12 +24,22 @@ struct ProfileView: View {
                         .padding(.top, 8)
                     LazyVGrid(columns: gridColumns, spacing: 1) {
                         ForEach(userPosts) { post in
-                            Image(post.imageUrl)
-                                .resizable()
-                                .scaledToFill()
+                            NavigationLink(destination: ScrollView { PostCell(post: post) }) {
+                                Group {
+                                    if let localImage = post.localImage {
+                                        Image(uiImage: localImage)
+                                            .resizable()
+                                            .scaledToFill()
+                                    } else if let imageUrl = post.imageUrl {
+                                        Image(imageUrl)
+                                            .resizable()
+                                            .scaledToFill()
+                                    }
+                                }
                                 .frame(width: imageDimension, height: imageDimension)
                                 .clipped()
                                 .background(Color.gray.opacity(0.3))
+                            }
                         }
                     }
                 }
@@ -46,6 +54,9 @@ struct ProfileView: View {
                     }
                     .foregroundColor(.primary)
                 }
+            }
+            .onAppear {
+                userPosts = Post.MOCK_POSTS.filter { $0.ownerUid == user.id }
             }
         }
     }

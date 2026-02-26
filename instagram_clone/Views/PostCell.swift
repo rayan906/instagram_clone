@@ -11,25 +11,38 @@ struct PostCell: View {
     let post: Post
     var body: some View {
         VStack(alignment: .leading) {
-            
             HStack {
-                Circle()
-                    .frame(width: 36, height: 36)
-                    .foregroundColor(.gray)
-                
+                if let profileImageUrl = post.user?.profileImageUrl {
+                    Image(profileImageUrl)
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 36, height: 36)
+                        .clipShape(Circle())
+                } else {
+                    Image(systemName: "person.circle.fill")
+                        .resizable()
+                        .frame(width: 36, height: 36)
+                        .foregroundColor(.gray)
+                }
                 Text(post.user?.username ?? "Unknown")
                     .font(.footnote)
                     .fontWeight(.semibold)
                 Spacer()
             }
             .padding(.horizontal, 8)
-            
-            Image(post.imageUrl)
-                .resizable()
-                .scaledToFill()
-                .frame(width: UIScreen.main.bounds.width, height: 400)
-                .clipped()
-                .background(Color.gray.opacity(0.2))
+            Group {
+                if let localImage = post.localImage {
+                    Image(uiImage: localImage)
+                        .resizable()
+                        .scaledToFit()
+                } else if let imageUrl = post.imageUrl {
+                    Image(imageUrl)
+                        .resizable()
+                        .scaledToFit()
+                }
+            }
+            .frame(width: UIScreen.main.bounds.width)
+            .background(Color.black.opacity(0.9))
             
             HStack(spacing: 16) {
                 Image(systemName: "heart")

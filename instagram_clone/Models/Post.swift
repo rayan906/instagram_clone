@@ -5,16 +5,18 @@
 //  Created by apprikart on 23/02/26.
 //
 import Foundation
+import UIKit // We need UIKit to use UIImage
 
 struct Post: Identifiable, Hashable {
     let id: String
     let ownerUid: String
     let caption: String
     var likes: Int
-    let imageUrl: String
+    var imageUrl: String?
+    var localImage: UIImage?
     let timestamp: Date
     let user: User?
-    
+
     static var MOCK_POSTS: [Post] = [
         .init(
             id: UUID().uuidString,

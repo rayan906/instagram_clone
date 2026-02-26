@@ -18,11 +18,19 @@ struct StorySectionView: View {
             HStack(spacing: 16) {
                 VStack {
                     ZStack(alignment: .bottomTrailing) {
-                        Image("user1")
-                            .resizable()
-                            .foregroundColor(.gray)
-                            .frame(width: 65, height: 65)
-                            .clipShape(Circle())
+                        if let profileImageUrl = User.MOCK_USERS[0].profileImageUrl {
+                            Image(profileImageUrl)
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: 65, height: 65)
+                                .clipShape(Circle())
+                        } else {
+                            Image(systemName: "person.circle.fill")
+                                .resizable()
+                                .foregroundColor(.gray)
+                                .frame(width: 65, height: 65)
+                                .clipShape(Circle())
+                        }
                         
                         Image(systemName: "plus.circle.fill")
                             .foregroundColor(.blue)

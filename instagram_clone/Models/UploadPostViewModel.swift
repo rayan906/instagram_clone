@@ -15,7 +15,7 @@ class UploadPostViewModel: ObservableObject {
     
     @Published var postImage: Image?
     
-    private var uiImage: UIImage?
+    var uiImage: UIImage?
     
     func loadImage(fromItem item: PhotosPickerItem?) async {
         guard let item = item else { return }

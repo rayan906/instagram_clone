@@ -16,7 +16,6 @@ struct UploadPostView: View {
         NavigationStack {
             VStack {
                 if let image = viewModel.postImage {
-                    // State 2: Image is selected, show preview and caption field
                     HStack(alignment: .top) {
                         image
                             .resizable()
@@ -31,7 +30,6 @@ struct UploadPostView: View {
                     
                     Spacer()
                 } else {
-                    // State 1: No image selected, show the PhotosPicker
                     PhotosPicker(selection: $viewModel.selectedImage) {
                         VStack(spacing: 8) {
                             Image(systemName: "photo.on.rectangle.angled")
@@ -51,7 +49,6 @@ struct UploadPostView: View {
             .navigationTitle("New Post")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                // Cancel button to clear the selection
                 ToolbarItem(placement: .navigationBarLeading) {
                     if viewModel.postImage != nil {
                         Button("Cancel") {
@@ -61,13 +58,20 @@ struct UploadPostView: View {
                         .foregroundColor(.primary)
                     }
                 }
-                
-                // Share button (currently just clears the form, later will save to database)
                 ToolbarItem(placement: .navigationBarTrailing) {
                     if viewModel.postImage != nil {
                         Button("Share") {
-                            print("Caption to upload: \(caption)")
-                            // Reset the view after sharing
+                            let newPost = Post(
+                                id: UUID().uuidString,
+                                ownerUid: User.MOCK_USERS[0].id,
+                                caption: caption,
+                                likes: 0,
+                                imageUrl: nil,
+                                localImage: viewModel.uiImage,
+                                timestamp: Date(),
+                                user: User.MOCK_USERS[0]
+                            )
+                            Post.MOCK_POSTS.insert(newPost, at: 0)
                             viewModel.clearPostData()
                             caption = ""
                         }
