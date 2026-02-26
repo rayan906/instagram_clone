@@ -67,6 +67,7 @@ struct ProfileHeaderView: View {
         }
     }
 }
+
 struct UserStatView: View {
     let value: String
     let title: String
